@@ -89,7 +89,7 @@ footer{
 @media(max-width:768px){
     main{
         font-size: 40px;
-        height: 785px;
+        height: 770px;
     }
     .left>.poinNumber{
         top: 40%;
@@ -103,9 +103,11 @@ footer{
     .kubukiri>.pemain{
         display: grid;
         grid-template-columns: 15% 85%;
+        font-size: 8px;
     }
     .kubukanan>.pemain{
         display: grid;
         grid-template-columns: 85% 15%;
+        font-size: 8px;
     }
 }
