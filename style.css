@@ -7,7 +7,7 @@
 }
 
 main{
-    height: 590px;
+    height: 550px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -89,7 +89,7 @@ footer{
 @media(max-width:768px){
     main{
         font-size: 40px;
-        height: 650px;
+        height: 680px;
     }
     .left>.poinNumber{
         top: 40%;
