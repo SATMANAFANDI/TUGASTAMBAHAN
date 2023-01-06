@@ -119,16 +119,16 @@ footer{
   and (max-device-width: 980px)
   and (orientation: landscape){
     main{
-        height:318px;
+        height:290px;
         /* min-height: 50px;      */
     }
 
     .pemain>.name{
-        padding: 8px;
+        padding: 16px;
     }
 
     .kubukanan>.pemain>.name{
-        padding: 8px;
+        padding: 16px;
     }
 
     
