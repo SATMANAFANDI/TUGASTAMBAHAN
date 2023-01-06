@@ -63,7 +63,7 @@ h2{
 
 .pemain>.name{
     background-color: #222325;
-    padding: 6px;
+    padding: 14px;
     color: #FFFFFF;
     text-align: left;
     
@@ -71,12 +71,12 @@ h2{
 
 .pemain>.position{
     background-color: #FFD600;
-    padding: 6px;
+    padding: 8px;
 }
 
 .kubukanan>.pemain>.name{
     background-color:#535456;
-    padding: 6px;
+    padding: 14px;
     text-align: right;
     
 }
@@ -91,7 +91,7 @@ footer{
 @media(max-width:768px){
     main{
         font-size: 40px;
-        height: 640px;
+        height: 760px;
     }
     .left>.poinNumber{
         top: 40%;
@@ -119,8 +119,16 @@ footer{
   and (max-device-width: 980px)
   and (orientation: landscape){
     main{
-        height:330px;
+        height:318px;
         /* min-height: 50px;      */
+    }
+
+    .pemain>.name{
+        padding: 8px;
+    }
+
+    .kubukanan>.pemain>.name{
+        padding: 8px;
     }
 
     
