@@ -91,7 +91,7 @@ footer{
 @media(max-width:768px){
     main{
         font-size: 40px;
-        height: 740px;
+        height: 730px;
     }
     .left>.poinNumber{
         top: 40%;
