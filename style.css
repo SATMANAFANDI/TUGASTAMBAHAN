@@ -119,8 +119,8 @@ footer{
   and (max-device-width: 980px)
   and (orientation: landscape){
     main{
-        height:340px;
-        min-height: 37px;     
+        height:330px;
+        /* min-height: 50px;      */
     }
 
     
