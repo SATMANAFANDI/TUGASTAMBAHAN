@@ -122,11 +122,11 @@ body{
         }
         .poin-kanan{
             left:70%;
-            top: 27%;
+            top: 50%;
         }
         .poin-kiri{
             left:20%;
-            top: 27%;
+            top: 50%;
         }
         .bawah>.user1>.identitas{
             display: grid;
