@@ -1,135 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+One&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.atas{
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size:90px;
+    letter-spacing: normal;
+}
+
+.bawah{
+    margin: 0;
+    width: 100%;
+}
 
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: content-box;
 }
 
-
-
-main{
-    height: 550px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 97px;
-    text-align: center;
-    color: #FFFFFF;
+.atas,.bawah{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
 }
 
-main, footer{
+.kanan,.kiri{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
-
-h2{
-    cursor: pointer;
-}
-
-.left{
-    background-color: #1E1E1E;
-}
-
-.left>.poinNumber{
-    position: absolute;
-    top: 35%;
-    left:72%;
-    color: #FFFFFF;
-}
-
-.right{
-    background-color: #222325;
-}
-
-.right>.poinNumber{
-    position: absolute;
-    top: 35%;
-    left:23%;
-    color: #FFFFFF;
-}
-
-
-.kubukiri>.pemain{
-    display: grid;
-    grid-template-columns: 5% 95%;
-}
-
-.kubukanan>.pemain{
-    display: grid;
-    grid-template-columns: 95% 5%;
-}
-
-.pemain>.name{
-    background-color: #222325;
-    padding: 14px;
-    color: #FFFFFF;
-    text-align: left;
     
 }
 
-.pemain>.position{
+.kanan{
+    background-color:#1E1E1E;
+}
+
+.kiri{
+    background-color: #222325;
+}
+
+.poin-kanan{
+    top: 40%;
+    left:71%;
+    position: fixed;
+}
+
+.poin-kiri{
+    top: 40%;
+    left:20%;
+    position: fixed;
+}
+
+.bawah>.user1>.identitas{
+    display: grid;
+    grid-template-columns: 7% 93%;
+    
+}    
+
+.bawah>.user2>.identitas{
+    display: grid; 
+    grid-template-columns: 93% 7%;   
+}
+
+.user1>.identitas>.posisi{
+    color: #1E1E1E ;
     background-color: #FFD600;
-    padding: 8px;
+    padding: 5px;
+    text-align: center;
 }
 
-.kubukanan>.pemain>.name{
-    background-color:#535456;
-    padding: 14px;
+.user1>.identitas>.nama{
+    color: #fff ;
+    background-color:#222325;
+    padding: 5px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.user2>.identitas>.nama{
+    background-color: #FFD600;
+    padding: 5px;
+    text-align: center;
+}
+
+.user2>.identitas>.posisi{
+    background-color: #535456 ;
+    color: #fff ;
+    padding: 5px;
     text-align: right;
-    
+    padding-right: 15px;
+}
+.bawah{
+    font-size:10px;
 }
 
-
-
-footer{
-    height: 96px;
-    margin: 0;
+@media(orientation: landscape){
+        .atas{
+            height:93.6%;
+            min-height: 37px;
+        }
+        .kanan{
+            left:20%;
+            top:40%;
+        }
+        .kiri{
+            left: 73%;
+            top:40%;
+        }
+        .poin-kanan,.poin-kiri{
+            top: 22% !important;
+        }
+        .poin-kanan{
+            left:70%;
+            top: 33%;
+        }
+        .poin-kiri{
+            left:20%;
+            top: 33%;
+        }
+        .bawah>.user1>.identitas{
+            display: grid;
+            grid-template-columns: 16% 90%;
+            
+        }
+        .bawah>.user2>.identitas{
+            display: grid;
+            grid-template-columns: 84% 16%;
+            
+        }
+        .bawah{
+            font-size:10px;
+        }
 }
 
-@media(max-width:768px){
-    main{
-        font-size: 40px;
-        height: 700px;
-    }
-    .left>.poinNumber{
-        top: 40%;
-        left:70%;
-        
-    }
-    .right>.poinNumber{
-        top: 40%;
-        left:20%;
-    }
-    .kubukiri>.pemain{
-        display: grid;
-        grid-template-columns: 15% 85%;
-        font-size: 10px;
-    }
-    .kubukanan>.pemain{
-        display: grid;
-        grid-template-columns: 85% 15%;
-        font-size: 10px;
-    }
-} 
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 980px)
-  and (orientation: landscape){
-    main{
-        height:290px;
-        /* min-height: 50px;      */
-    }
-
-    .pemain>.name{
-        padding: 16px;
-    }
-
-    .kubukanan>.pemain>.name{
-        padding: 16px;
-    }
-
-    
-} 
+@media(orientation: portrait){
+        .atas{
+            height:97.7%;
+            min-height: 37px;
+        }
+        .kanan{
+            left:20%;
+            top:40%;
+        }
+        .kiri{
+            left: 73%;
+            top:40%;
+        }
+        .poin-kanan{
+            left:60%;
+            top: 40%;
+        }
+        .poin-kiri{
+            left:15%;
+            top: 40%;
+        }
+        .bawah>.user1>.identitas{
+            display: grid;
+            grid-template-columns: 16% 90%;
+            
+        }
+        .bawah>.user2>.identitas{
+            display: grid;
+            grid-template-columns: 84% 16%;
+            
+        }
+}
