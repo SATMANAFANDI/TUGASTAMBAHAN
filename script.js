@@ -1,4 +1,4 @@
-const pilihan = Array.from(document.getElementsByClassName('poinNumber'));
+const pilihan = Array.from(document.getElementsByClassName('point'));
 pilihan.forEach((e)=>{
     e.addEventListener('touchstart', event=> {
       touchstartX = event.changedTouches[0].screenX;
